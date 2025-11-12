@@ -1,13 +1,7 @@
-# Порт, на котором работает сам Config Server
-server:
-  port: 8888
-
-# Имя, под которым ОН САМ будет регистрироваться в Eureka
-spring:
-  application:
-    name: config-server
-
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+  instance:
+    # Полезная настройка: отображать IP-адрес вместо имени хоста в Eureka
+    prefer-ip-address: true
