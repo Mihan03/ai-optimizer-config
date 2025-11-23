@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5444/cv_optimizer_db"
+    username: postgres
+    password: 1
+    driver-class-name: org.postgresql.Driver
+    jpa:
+      # Отключаем авто-генерацию таблиц Hibernate-ом, т.к. у нас есть Liquibase
+      hibernate:
+        ddl-auto: validate
+      show-sql: true # Чтобы видеть запросы в консоли (удобно при разработке)
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.yaml
+    enabled: true
