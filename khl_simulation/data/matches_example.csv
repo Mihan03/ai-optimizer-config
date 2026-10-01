@@ -1,0 +1,2 @@
+match_id,date,time_msk,home,away,lam_home,lam_away,home_backup_goalie,away_backup_goalie,home_b2b,away_b2b,home_tz_shift,away_tz_shift
+KHL-2026-09-30-03,2026-09-30,19:30,Локомотив,Сибирь,2.80,1.40,,,,,0,4
